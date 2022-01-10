@@ -67,3 +67,20 @@ body{
 .fa-github:hover {
   transform: rotate(360deg) scale(1.2);
 }
+
+/* MOBILE */
+
+@media screen and (max-width: 500px) {
+    .calculatorContainer {
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 60px);
+    }    
+    
+    .footer > p {
+        width: 200px;
+    }
+
+    .fa-github {
+        font-size: 30px;
+    }
+}
