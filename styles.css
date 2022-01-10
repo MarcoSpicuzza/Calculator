@@ -76,6 +76,13 @@ body{
         grid-template-rows: minmax(120px, auto) repeat(5, 60px);
     }    
     
+    .footer {
+        clear: both;
+        position: relative;
+        height: 200px;
+        margin-top: -140px;
+    }
+
     .footer > p {
         width: 200px;
     }
