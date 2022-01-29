@@ -29,19 +29,27 @@ body{
 }
 
 .calculatorDisplay {
-    display: grid;
-    justify-content: end;
-    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
     grid-column: 1 / -1;
+    flex-direction: column;
     background: linear-gradient(to right, #633199, #a178cc);
     gap: 40px;
     padding: 5%;
     border-radius: 1%;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
-.previousOperand, .currentOperand {
+.currentOperand {
     color: white;
     font-size: 2rem;
+}
+
+.previousOperand {
+    color: white;
+    font-size: 1.5rem;
 }
 
 .footer {
